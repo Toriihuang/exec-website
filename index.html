@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Collection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- ============ SHELF VIEW ============ -->
+<section id="view-shelf">
+  <div class="intro">
+    <p class="kicker">// Running for Co-President</p>
+    <h1 class="display">Victoria (Tori) Huang</h1>
+    <p>Hi, I'm Tori! Walk through my playlist with me!</p>
+    <p class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      Click a cd and play some music!
+    </p>
+  </div>
+
+  <div class="shelf-wrap">
+    <div class="shelf" id="shelf" tabindex="0" aria-label="CD collection, scroll horizontally"></div>
+  </div>
+
+  <footer class="shelf-footer">Vote for me as Co-President!</footer>
+</section>
+
+<!-- ============ DETAIL VIEW ============ -->
+<section id="view-detail" class="hidden" aria-live="polite"></section>
+
+<button id="pauseBtn" class="pause-btn" type="button">
+  Pause music
+</button>
+
+
+<audio id="bgAudio" preload="none"></audio>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
